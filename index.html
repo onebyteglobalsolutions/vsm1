@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Digital Business Card - Shree Salon</title>
+  <title>Shree Salon - Digital Card</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background: #f6f6f6;
       margin: 0;
       padding: 0;
@@ -14,11 +14,11 @@
     }
     .card {
       background: #fff;
-      max-width: 400px;
+      max-width: 420px;
       margin: 30px auto;
-      padding: 20px;
-      border-radius: 16px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 24px;
+      border-radius: 20px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
     }
     .logo {
       width: 120px;
@@ -32,9 +32,27 @@
       margin: 6px 0;
       color: #333;
     }
+    ul.services {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+    ul.services li {
+      padding: 6px 0;
+      border-bottom: 1px dashed #ccc;
+    }
+    .review {
+      font-style: italic;
+      color: #555;
+      background: #f1f1f1;
+      border-left: 5px solid #ff5003;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 8px;
+    }
     a.button {
       display: block;
-      margin: 12px auto;
+      margin: 10px auto;
       padding: 12px;
       width: 80%;
       background: #002347;
@@ -43,33 +61,47 @@
       border-radius: 8px;
       font-size: 16px;
     }
-    a.button.whatsapp {
-      background: #25D366;
-    }
-    a.button.map {
-      background: #ff5003;
-    }
-    a.button.call {
-      background: #007bff;
-    }
-    a.button.email {
-      background: #ff9900;
+    a.whatsapp { background: #25D366; }
+    a.map { background: #ff5003; }
+    a.call { background: #007bff; }
+    a.email { background: #ff9900; }
+    .social-icons a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 24px;
+      color: #002347;
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
   <div class="card">
     <img src="https://via.placeholder.com/120" alt="Logo" class="logo" />
     <h2>Shree Salon</h2>
     <p>💇 Ladies & Gents Haircut, Spa & Beauty</p>
     <p>📍 Vijayanagar, Mysore</p>
 
-    <a class="button whatsapp" href="https://wa.me/917353425150?text=Hi%20I%20am%20interested%20in%20your%20services" target="_blank">💬 WhatsApp Us</a>
-    <a class="button call" href="tel:+917353425150">📞 Call Now</a>
+    <h3>💈 Services & Prices:</h3>
+    <ul class="services">
+      <li>Haircut – ₹150</li>
+      <li>Hair Spa – ₹499</li>
+      <li>Facial – ₹699</li>
+      <li>Beard Trim – ₹99</li>
+    </ul>
+
+    <h3>🌟 Customer Reviews:</h3>
+    <div class="review">“Best haircut in Mysore! Clean and friendly service.” – Rahul K.</div>
+    <div class="review">“My go-to salon for facials and spa.” – Nisha D.</div>
+
+    <a class="button whatsapp" href="https://wa.me/919876543210?text=Hi%20I%20am%20interested%20in%20your%20services" target="_blank">💬 WhatsApp Us</a>
+    <a class="button call" href="tel:+919876543210">📞 Call Now</a>
     <a class="button email" href="mailto:shreesalon@example.com">📧 Email Us</a>
     <a class="button map" href="https://goo.gl/maps/k3n3vXYy8G72" target="_blank">📍 View on Google Maps</a>
-  </div>
 
+    <div class="social-icons">
+      <a href="https://instagram.com/shreesalon" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/shreesalon" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+  </div>
 </body>
 </html>
